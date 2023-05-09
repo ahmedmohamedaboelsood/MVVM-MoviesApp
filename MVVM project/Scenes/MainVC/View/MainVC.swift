@@ -30,7 +30,11 @@ class MainVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         viewModel.getData()
+         
     }
+    
+    
+    
     
     //MARK: - Functions
 
@@ -43,10 +47,10 @@ class MainVC: UIViewController {
         moviesTableView.dataSource = self
         moviesTableView.delegate = self
         
+        title = "Movies"
         self.regesterCell()
     }
  
-    
     func regesterCell(){
         moviesTableView.register(UINib(nibName:MainTableViewCell.ID, bundle: nil), forCellReuseIdentifier: MainTableViewCell.ID)
     }
@@ -56,7 +60,7 @@ class MainVC: UIViewController {
         
         let detailsViewModel = DetailsViewModel(movie: movie)
         let detailsVC = DetailsVC(viewModel: detailsViewModel)
-       present(detailsVC, animated: true)
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     func bindViewModel(){
@@ -112,6 +116,7 @@ extension MainVC : UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         openDetails(movieID: cellDataSource[indexPath.row].id)
+        
     }
-    
+      
 }

@@ -140,11 +140,11 @@
 		21B768602A01230A0051F50A /* MVVM project */ = {
 			isa = PBXGroup;
 			children = (
-				21B768B42A0529970051F50A /* Extensions */,
 				21B768992A0126DE0051F50A /* Core */,
 				21B7689C2A0127860051F50A /* Networking */,
 				21B768982A0126C90051F50A /* Scenes */,
 				21B768A62A028A0D0051F50A /* Classes */,
+				21B768B42A0529970051F50A /* Extensions */,
 				21B7689A2A0126E50051F50A /* Resources */,
 				21B768952A01267E0051F50A /* View */,
 				21B7686F2A01230C0051F50A /* Info.plist */,
@@ -180,8 +180,8 @@
 		21B768982A0126C90051F50A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				21B768B72A06463B0051F50A /* DetailsVC */,
 				21B7689B2A0127040051F50A /* MainVC */,
+				21B768B72A06463B0051F50A /* DetailsVC */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -294,7 +294,6 @@
 			children = (
 				21B768BB2A06468C0051F50A /* ViewModel */,
 				21B768BA2A0646860051F50A /* View */,
-				21B768B92A06467D0051F50A /* Model */,
 			);
 			path = DetailsVC;
 			sourceTree = "<group>";
@@ -306,13 +305,6 @@
 				21B768AE2A0527200051F50A /* MainTableViewCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		21B768B92A06467D0051F50A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		21B768BA2A0646860051F50A /* View */ = {

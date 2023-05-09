@@ -23,9 +23,12 @@ class DetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configeView()
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        configeView()
+    }
     
     init(viewModel: DetailsViewModel) {
         self.viewModel = viewModel
@@ -42,6 +45,8 @@ class DetailsVC: UIViewController {
     
     
     func configeView(){
+        title = "Details"
+        
         movieImageView.kf.indicatorType = .activity
         movieImageView.kf.setImage(with: viewModel.movieImage)
         movieNameLbl.text = viewModel.movieName

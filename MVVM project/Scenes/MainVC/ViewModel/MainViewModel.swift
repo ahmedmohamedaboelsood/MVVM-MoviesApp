@@ -20,7 +20,9 @@ class MainViewModel {
     }
     
     func numberOfRows(in section: Int)->Int{
+        
         dataSourse?.results.count ?? 0
+        
     }
     //MARK: - Functions
     func getData(){
@@ -51,7 +53,6 @@ class MainViewModel {
         guard let movie = dataSourse?.results.first(where:{$0.id == movieID}) else {
            return nil
        }
-        
         return movie
     }
     

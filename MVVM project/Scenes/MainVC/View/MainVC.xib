@@ -21,17 +21,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HB8-jC-1aT">
-                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-60-hWo">
-                    <rect key="frame" x="163" y="69" width="67" height="24"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IcH-s2-IMY">
-                    <rect key="frame" x="178" y="442" width="37" height="37"/>
+                    <rect key="frame" x="178" y="420" width="37" height="37"/>
                     <color key="color" systemColor="systemGrayColor"/>
                 </activityIndicatorView>
             </subviews>
@@ -41,11 +35,9 @@
                 <constraint firstItem="IcH-s2-IMY" firstAttribute="centerX" secondItem="HB8-jC-1aT" secondAttribute="centerX" id="3kD-aq-7cg"/>
                 <constraint firstItem="HB8-jC-1aT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4jg-Zl-a79"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HB8-jC-1aT" secondAttribute="bottom" id="8QG-iI-Xou"/>
-                <constraint firstItem="QSq-60-hWo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DON-Gm-GZv"/>
+                <constraint firstItem="HB8-jC-1aT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AjC-Xq-Tug"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HB8-jC-1aT" secondAttribute="trailing" id="JH1-cy-rp6"/>
                 <constraint firstItem="IcH-s2-IMY" firstAttribute="centerY" secondItem="HB8-jC-1aT" secondAttribute="centerY" id="NB4-lr-5ss"/>
-                <constraint firstItem="HB8-jC-1aT" firstAttribute="top" secondItem="QSq-60-hWo" secondAttribute="bottom" constant="10" id="edZ-Yv-oJM"/>
-                <constraint firstItem="QSq-60-hWo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="sd2-8j-dLX"/>
             </constraints>
             <point key="canvasLocation" x="-260.30534351145036" y="22.535211267605636"/>
         </view>
