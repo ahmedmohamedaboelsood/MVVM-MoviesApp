@@ -32,6 +32,8 @@ class BaseAPI<T:TargetType>{
                 case .failure(_):
                     completion(.failure(.cantParseData))
                 }
+            }else if (400...499).contains(statusCode){
+                completion(.failure(.urlError))
             }else{
                 completion(.failure(.not200))
             }
