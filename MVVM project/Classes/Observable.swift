@@ -8,18 +8,16 @@
 import Foundation
 
 class Observable<T> {
-    
     var value : T? {
         didSet{
             self.listener?(value)
         }
     }
+    private var listener : ((T?)->Void)?
     
     init (_ value:T?){
         self.value = value
     }
-    
-    private var listener : ((T?)->Void)?
     
     func bind(_ listener: @escaping (T?)->Void){
         listener(value)

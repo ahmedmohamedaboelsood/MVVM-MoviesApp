@@ -8,56 +8,45 @@
 import UIKit
 
 class MainVC: UIViewController {
-
     
    //MARK: - IBOutlets
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     @IBOutlet weak var moviesTableView: UITableView!
     
     //MARK: - Variables
-    
     var viewModel = MainViewModel()
     var cellDataSource : [MainCellViewModel] = []
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
         bindViewModel()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         viewModel.getData()
          
     }
-    
-    
-    
-    
     //MARK: - Functions
-
-    
     func configView(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Crash test", style: .plain, target: self, action: #selector(self.crashButtonTapped(_:)))
         setupTableView()
     }
     
     func setupTableView(){
         moviesTableView.dataSource = self
         moviesTableView.delegate = self
-        
         title = "Movies"
-        self.regesterCell()
+        self.regesterTableViewCell()
     }
  
-    func regesterCell(){
+    func regesterTableViewCell(){
         moviesTableView.register(UINib(nibName:MainTableViewCell.ID, bundle: nil), forCellReuseIdentifier: MainTableViewCell.ID)
     }
     
-    func openDetails(movieID : Int){
+    func openMoviesDetails(movieID : Int){
         guard let movie = viewModel.retrieMovie(movieID: movieID) else {return}
-        
         let detailsViewModel = DetailsViewModel(movie: movie)
         let detailsVC = DetailsVC(viewModel: detailsViewModel)
         navigationController?.pushViewController(detailsVC, animated: true)
@@ -65,19 +54,16 @@ class MainVC: UIViewController {
     
     func bindViewModel(){
         viewModel.isLoading.bind { [weak self] isLoading in
-            
+            guard let self = self else{return}
             guard let isLoading = isLoading else {return}
-            
             if isLoading {
-                self?.activityIndicator.startAnimating()
+                self.activityIndicator.startAnimating()
                 print("start")
             }else{
-                self?.activityIndicator.stopAnimating()
+                self.activityIndicator.stopAnimating()
                 print("stop")
             }
         }
-        
-        
         viewModel.cellDataSourse.bind { [weak self] movies in
             guard let movies = movies else {return}
             self?.cellDataSource = movies
@@ -85,12 +71,11 @@ class MainVC: UIViewController {
         }
     }
     
-    //MARK: - IBActions
-    
-    
+    @objc func crashButtonTapped(_ sender: AnyObject) {
+          let numbers = [0]
+          let _ = numbers[1]
+    }
 }
-
-
 
 extension MainVC : UITableViewDelegate , UITableViewDataSource{
    
@@ -115,8 +100,6 @@ extension MainVC : UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        openDetails(movieID: cellDataSource[indexPath.row].id)
-        
+        openMoviesDetails(movieID: cellDataSource[indexPath.row+1].id)
     }
-      
 }

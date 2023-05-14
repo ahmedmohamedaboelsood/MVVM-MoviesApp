@@ -8,25 +8,20 @@
 import UIKit
 import Kingfisher
 class MainTableViewCell: UITableViewCell {
-
-    //MARK: - IBOutlets
     
+    //MARK: - IBOutlets
     @IBOutlet weak var cellBackgroundView: UIView!
     @IBOutlet weak var movieRateLbl: UILabel!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var movieReleaseYearLbl: UILabel!
     @IBOutlet weak var movieNameLbl: UILabel!
-   
+    
     //MARK: - Variables
-    
     static let ID = String(describing: MainTableViewCell.self)
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
     }
-
     
     func setupUI(){
         cellBackgroundView.round()
@@ -42,5 +37,4 @@ class MainTableViewCell: UITableViewCell {
         movieReleaseYearLbl.text = viewModel.releaseDate
         movieRateLbl.text = "\(viewModel.rate)"
     }
-    
 }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1BE9649D2CCD2EFD96289537 /* Pods_MVVM_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61750FCF3C1F5F380D7813D4 /* Pods_MVVM_project.framework */; };
+		21789C392A0CCE8F00CE49A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21789C382A0CCE8F00CE49A9 /* GoogleService-Info.plist */; };
+		21789C3C2A0CD03900CE49A9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 21789C3B2A0CD03900CE49A9 /* FirebaseAnalytics */; };
+		21789C3E2A0CD03900CE49A9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 21789C3D2A0CD03900CE49A9 /* FirebaseCrashlytics */; };
+		21789C402A0CD03900CE49A9 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 21789C3F2A0CD03900CE49A9 /* FirebaseMessaging */; };
+		21789C422A0CD03900CE49A9 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 21789C412A0CD03900CE49A9 /* FirebasePerformance */; };
 		21B768622A01230A0051F50A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768612A01230A0051F50A /* AppDelegate.swift */; };
 		21B768642A01230A0051F50A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768632A01230A0051F50A /* SceneDelegate.swift */; };
 		21B7686B2A01230C0051F50A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B7686A2A01230C0051F50A /* Assets.xcassets */; };
@@ -20,7 +25,7 @@
 		21B7689E2A0136730051F50A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7689D2A0136730051F50A /* MainViewModel.swift */; };
 		21B768A02A0143AD0051F50A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7689F2A0143AD0051F50A /* Constants.swift */; };
 		21B768A22A01453E0051F50A /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768A12A01453E0051F50A /* MoviesModel.swift */; };
-		21B768A52A014EBB0051F50A /* MainApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768A42A014EBB0051F50A /* MainApi.swift */; };
+		21B768A52A014EBB0051F50A /* MainMoviesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768A42A014EBB0051F50A /* MainMoviesNetworking.swift */; };
 		21B768A82A028BBD0051F50A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768A72A028BBD0051F50A /* Observable.swift */; };
 		21B768AF2A0527200051F50A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768AD2A0527200051F50A /* MainTableViewCell.swift */; };
 		21B768B02A0527200051F50A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B768AE2A0527200051F50A /* MainTableViewCell.xib */; };
@@ -28,6 +33,9 @@
 		21B768B62A0529A90051F50A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768B52A0529A90051F50A /* Extensions.swift */; };
 		21B768BE2A0646AD0051F50A /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B768BC2A0646AD0051F50A /* DetailsVC.swift */; };
 		21B768BF2A0646AD0051F50A /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B768BD2A0646AD0051F50A /* DetailsVC.xib */; };
+		21C1F9122A10E81800BB63F8 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C1F9112A10E81800BB63F8 /* TargetType.swift */; };
+		21C1F9152A10EC3400BB63F8 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C1F9142A10EC3400BB63F8 /* BaseAPI.swift */; };
+		21C1F9172A10F8BC00BB63F8 /* MainMoviesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C1F9162A10F8BC00BB63F8 /* MainMoviesApi.swift */; };
 		21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */; };
 		4F902836B546CF8D5E2B97CF /* Pods_MVVM_project_MVVM_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE442C05913CCA166B9FB48 /* Pods_MVVM_project_MVVM_projectUITests.framework */; };
 		E69050B8858A4B6C2C128F96 /* Pods_MVVM_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */; };
@@ -51,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21789C382A0CCE8F00CE49A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21B7685E2A01230A0051F50A /* MVVM project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B768612A01230A0051F50A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21B768632A01230A0051F50A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +76,7 @@
 		21B7689D2A0136730051F50A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		21B7689F2A0143AD0051F50A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21B768A12A01453E0051F50A /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
-		21B768A42A014EBB0051F50A /* MainApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApi.swift; sourceTree = "<group>"; };
+		21B768A42A014EBB0051F50A /* MainMoviesNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMoviesNetworking.swift; sourceTree = "<group>"; };
 		21B768A72A028BBD0051F50A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		21B768AD2A0527200051F50A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		21B768AE2A0527200051F50A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
@@ -75,6 +84,9 @@
 		21B768B52A0529A90051F50A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		21B768BC2A0646AD0051F50A /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		21B768BD2A0646AD0051F50A /* DetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
+		21C1F9112A10E81800BB63F8 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		21C1F9142A10EC3400BB63F8 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		21C1F9162A10F8BC00BB63F8 /* MainMoviesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMoviesApi.swift; sourceTree = "<group>"; };
 		21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		256076CC7156CD513EEEBEF4 /* Pods-MVVM project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM project.debug.xcconfig"; path = "Target Support Files/Pods-MVVM project/Pods-MVVM project.debug.xcconfig"; sourceTree = "<group>"; };
 		270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21789C402A0CD03900CE49A9 /* FirebaseMessaging in Frameworks */,
+				21789C3E2A0CD03900CE49A9 /* FirebaseCrashlytics in Frameworks */,
+				21789C422A0CD03900CE49A9 /* FirebasePerformance in Frameworks */,
+				21789C3C2A0CD03900CE49A9 /* FirebaseAnalytics in Frameworks */,
 				1BE9649D2CCD2EFD96289537 /* Pods_MVVM_project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +164,7 @@
 				21B7689A2A0126E50051F50A /* Resources */,
 				21B768952A01267E0051F50A /* View */,
 				21B7686F2A01230C0051F50A /* Info.plist */,
+				21789C382A0CCE8F00CE49A9 /* GoogleService-Info.plist */,
 			);
 			path = "MVVM project";
 			sourceTree = "<group>";
@@ -217,8 +234,9 @@
 		21B7689C2A0127860051F50A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				21C1F9132A10E98000BB63F8 /* Constants */,
+				21C1F9102A10E80200BB63F8 /* Base */,
 				21B768A32A014E9C0051F50A /* MainApi */,
-				21B7689F2A0143AD0051F50A /* Constants.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -226,7 +244,8 @@
 		21B768A32A014E9C0051F50A /* MainApi */ = {
 			isa = PBXGroup;
 			children = (
-				21B768A42A014EBB0051F50A /* MainApi.swift */,
+				21B768A42A014EBB0051F50A /* MainMoviesNetworking.swift */,
+				21C1F9162A10F8BC00BB63F8 /* MainMoviesApi.swift */,
 			);
 			path = MainApi;
 			sourceTree = "<group>";
@@ -324,6 +343,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		21C1F9102A10E80200BB63F8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				21C1F9112A10E81800BB63F8 /* TargetType.swift */,
+				21C1F9142A10EC3400BB63F8 /* BaseAPI.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		21C1F9132A10E98000BB63F8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				21B7689F2A0143AD0051F50A /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		AF1538157F02840B24A53F1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,12 +395,19 @@
 				21B7685B2A01230A0051F50A /* Frameworks */,
 				21B7685C2A01230A0051F50A /* Resources */,
 				66519AC11C85A75CB9532358 /* [CP] Embed Pods Frameworks */,
+				21789C432A0CDA2E00CE49A9 /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MVVM project";
+			packageProductDependencies = (
+				21789C3B2A0CD03900CE49A9 /* FirebaseAnalytics */,
+				21789C3D2A0CD03900CE49A9 /* FirebaseCrashlytics */,
+				21789C3F2A0CD03900CE49A9 /* FirebaseMessaging */,
+				21789C412A0CD03900CE49A9 /* FirebasePerformance */,
+			);
 			productName = "MVVM project";
 			productReference = 21B7685E2A01230A0051F50A /* MVVM project.app */;
 			productType = "com.apple.product-type.application";
@@ -440,6 +483,9 @@
 				Base,
 			);
 			mainGroup = 21B768552A01230A0051F50A;
+			packageReferences = (
+				21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 21B7685F2A01230A0051F50A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -461,6 +507,7 @@
 				21B768B02A0527200051F50A /* MainTableViewCell.xib in Resources */,
 				21B7686B2A01230C0051F50A /* Assets.xcassets in Resources */,
 				21B768BF2A0646AD0051F50A /* DetailsVC.xib in Resources */,
+				21789C392A0CCE8F00CE49A9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +528,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		21789C432A0CDA2E00CE49A9 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
 		39898514F6DF86900BC513FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -588,14 +655,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C1F9172A10F8BC00BB63F8 /* MainMoviesApi.swift in Sources */,
 				21B768A82A028BBD0051F50A /* Observable.swift in Sources */,
 				21B768BE2A0646AD0051F50A /* DetailsVC.swift in Sources */,
 				21B768B32A05275A0051F50A /* MainCellViewModel.swift in Sources */,
 				21B768AF2A0527200051F50A /* MainTableViewCell.swift in Sources */,
 				21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */,
 				21B768A02A0143AD0051F50A /* Constants.swift in Sources */,
+				21C1F9122A10E81800BB63F8 /* TargetType.swift in Sources */,
 				21B768622A01230A0051F50A /* AppDelegate.swift in Sources */,
-				21B768A52A014EBB0051F50A /* MainApi.swift in Sources */,
+				21B768A52A014EBB0051F50A /* MainMoviesNetworking.swift in Sources */,
+				21C1F9152A10EC3400BB63F8 /* BaseAPI.swift in Sources */,
 				21B768A22A01453E0051F50A /* MoviesModel.swift in Sources */,
 				21B768932A0124220051F50A /* MainVC.swift in Sources */,
 				21B768642A01230A0051F50A /* SceneDelegate.swift in Sources */,
@@ -770,6 +840,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = NU3L58K3P3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVVM project/Info.plist";
@@ -938,6 +1009,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21789C3B2A0CD03900CE49A9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		21789C3D2A0CD03900CE49A9 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		21789C3F2A0CD03900CE49A9 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		21789C412A0CD03900CE49A9 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21789C3A2A0CD03900CE49A9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21B768562A01230A0051F50A /* Project object */;
 }

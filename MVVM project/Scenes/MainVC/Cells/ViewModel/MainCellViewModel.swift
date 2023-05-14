@@ -25,5 +25,4 @@ class MainCellViewModel {
     private func imagePosterURL(_ posterPath : String) -> URL?{
         URL(string: "\(NetworkConstants.shared.ImageServerAddress + posterPath)")
     }
-    
 }

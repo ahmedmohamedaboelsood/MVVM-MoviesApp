@@ -7,7 +7,25 @@
 		<key>MVVM project.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>21B7685D2A01230A0051F50A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21B768732A01230C0051F50A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>21B7687D2A01230C0051F50A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
