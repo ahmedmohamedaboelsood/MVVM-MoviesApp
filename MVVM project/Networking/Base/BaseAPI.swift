@@ -19,7 +19,7 @@ class BaseAPI<T:TargetType>{
         let method = Alamofire.HTTPMethod(rawValue: target.method.rawValue)
         let headers = Alamofire.HTTPHeaders(target.headers ?? [:])
         let parameters = buildParams(task: target.task)
-        AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseDecodable(of:M.self){response in
+        AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseDecodable(of:M.self){ response in
             
             guard let statusCode = response.response?.statusCode else {
                 completion(.failure(.urlError))

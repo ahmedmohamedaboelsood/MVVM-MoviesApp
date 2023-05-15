@@ -65,9 +65,10 @@ class MainVC: UIViewController {
             }
         }
         viewModel.cellDataSourse.bind { [weak self] movies in
+            guard let self = self else{return}
             guard let movies = movies else {return}
-            self?.cellDataSource = movies
-            self?.moviesTableView.reloadData()
+            self.cellDataSource = movies
+            self.moviesTableView.reloadData()
         }
     }
     
@@ -100,6 +101,6 @@ extension MainVC : UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        openMoviesDetails(movieID: cellDataSource[indexPath.row+1].id)
+        openMoviesDetails(movieID: cellDataSource[indexPath.row].id)
     }
 }
