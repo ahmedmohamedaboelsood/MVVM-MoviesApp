@@ -16,8 +16,8 @@ class MainCellViewModel {
     
     init(_ movie : Movie) {
         self.id = movie.id
-        self.title = movie.title ?? movie.name ?? ""
-        self.releaseDate = movie.release_date ?? movie.first_air_date ?? ""
+        self.title = movie.title ?? movie.name ?? movie.original_name ?? "N/A"
+        self.releaseDate = movie.release_date ?? movie.first_air_date ?? "N/A"
         self.rate = movie.vote_average
         self.moviePoster = imagePosterURL(movie.poster_path)
     }

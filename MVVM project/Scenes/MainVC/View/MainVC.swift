@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 class MainVC: UIViewController {
     
    //MARK: - IBOutlets
@@ -16,17 +16,16 @@ class MainVC: UIViewController {
     //MARK: - Variables
     var viewModel = MainViewModel()
     var cellDataSource : [MainCellViewModel] = []
-    
-    override func viewDidLoad() {
+    override func viewDidLoad() { 
         super.viewDidLoad()
+        viewModel.delegate = self
         configView()
-        bindViewModel()
-        
+        bindLoadingIndicator()
+        print("URL" ,Realm.Configuration.defaultConfiguration.fileURL)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         viewModel.getData()
-         
     }
     //MARK: - Functions
     func configView(){
@@ -52,7 +51,7 @@ class MainVC: UIViewController {
         navigationController?.pushViewController(detailsVC, animated: true)
     }
     
-    func bindViewModel(){
+    func bindLoadingIndicator(){
         viewModel.isLoading.bind { [weak self] isLoading in
             guard let self = self else{return}
             guard let isLoading = isLoading else {return}
@@ -64,11 +63,25 @@ class MainVC: UIViewController {
                 print("stop")
             }
         }
+    }
+    
+    func bindRemoteData(){
         viewModel.cellDataSourse.bind { [weak self] movies in
             guard let self = self else{return}
             guard let movies = movies else {return}
+            print(movies,"on sucsess")
             self.cellDataSource = movies
             self.moviesTableView.reloadData()
+        }
+    }
+    
+    func bindCashedData(){
+        viewModel.cashedCellDataSourse.bind { [weak self] movies in
+            guard let self = self else{return}
+            guard let movies = movies else {return}
+            print(movies,"on fail")
+            cellDataSource = movies
+            moviesTableView.reloadData()
         }
     }
     
@@ -78,7 +91,15 @@ class MainVC: UIViewController {
     }
 }
 
-extension MainVC : UITableViewDelegate , UITableViewDataSource{
+extension MainVC : UITableViewDelegate , UITableViewDataSource , MainViewModelDelegate{
+    func getcashedDataDelegate(message: String) {
+        bindCashedData()
+        showALert(message: message)
+    }
+    
+    func getRemoteDataDelegate() {
+        bindRemoteData()
+    }
    
     func numberOfSections(in tableView: UITableView) -> Int {
         viewModel.numberOfsections()

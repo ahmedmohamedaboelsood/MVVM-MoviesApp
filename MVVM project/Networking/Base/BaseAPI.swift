@@ -11,15 +11,31 @@ enum NetworkError : Error{
     case urlError
     case cantParseData
     case not200
+    case internetConnection
 }
 
 class BaseAPI<T:TargetType>{
-    
+    var connectionState : String?
     func fetshData<M:Decodable>(target:T,responceClass:M.Type,completion:@escaping(Result<M?,NetworkError>)->Void){
         let method = Alamofire.HTTPMethod(rawValue: target.method.rawValue)
         let headers = Alamofire.HTTPHeaders(target.headers ?? [:])
         let parameters = buildParams(task: target.task)
-        AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseDecodable(of:M.self){ response in
+        let urlString = target.baseURL + target.path
+        if Reachability.isConnectedToNetwork(){
+            print("Internet Connection Available!")
+            connectionState = "success"
+        }else{
+            completion(.failure(.internetConnection))
+            connectionState = nil
+        }
+        guard let connectionState = connectionState else {return}
+        
+        guard let encodedURLString =  urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+              let encodedURL = URL(string: encodedURLString) else {
+            print("Invalid URL")
+            return
+        }
+        AF.request(encodedURL, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseDecodable(of:M.self){ response in
             
             guard let statusCode = response.response?.statusCode else {
                 completion(.failure(.urlError))
