@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import CoreData
+
+protocol DetailsViewModelDelegate{
+    func cashingMovieIsDone(message:String)
+    func cashingMovieIsFail(message:String)
+}
 
 class DetailsViewModel{
     
     //MARK: - Variables
+    var delegate : DetailsViewModelDelegate?
     var movie : Movie
     var movieImage : URL?
     var movieName : String
@@ -24,5 +31,21 @@ class DetailsViewModel{
 
     private func getMovieImageUrl(_ imageCode : String) -> URL?{
         URL(string: "\(NetworkConstants.shared.ImageServerAddress)\(imageCode)")
+    }
+    
+    func addProductToCoreData(){
+         let entity = NSEntityDescription.insertNewObject(forEntityName: "Film", into: context) as? Film
+
+        entity?.poster_path = getMovieImageUrl(movie.poster_path)
+        entity?.title = movie.title ?? movie.name ?? ""
+        entity?.release_date = movie.release_date ?? movie.first_air_date ?? ""
+        entity?.vote_average = movie.vote_average
+        do{
+            try context.save()
+            delegate?.cashingMovieIsDone(message: "Added Successfully")
+        }catch{
+            print(error , "hhhhhhhhhh")
+            delegate?.cashingMovieIsFail(message: "Somthing went wrong")
+        }
     }
 }

@@ -37,4 +37,12 @@ class MainTableViewCell: UITableViewCell {
         movieReleaseYearLbl.text = viewModel.releaseDate
         movieRateLbl.text = "\(viewModel.rate)"
     }
+    
+    func setupCellDataForCoreData(data:FilmModel){
+        movieImageView.kf.indicatorType = .activity
+        movieImageView.kf.setImage(with: data.poster_path)
+        movieNameLbl.text = data.title
+        movieReleaseYearLbl.text = data.release_date
+        movieRateLbl.text = "\(data.vote_average)"
+    }
 }

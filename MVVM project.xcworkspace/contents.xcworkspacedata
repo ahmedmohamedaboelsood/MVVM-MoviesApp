@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MVVM project/Helper/Film+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:MVVM project/Helper/Film+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:MVVM project.xcodeproj">
    </FileRef>
    <FileRef

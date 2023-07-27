@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import CoreData
 class MainVC: UIViewController {
     
    //MARK: - IBOutlets
@@ -21,7 +22,7 @@ class MainVC: UIViewController {
         viewModel.delegate = self
         configView()
         bindLoadingIndicator()
-        print("URL" ,Realm.Configuration.defaultConfiguration.fileURL)
+       // print("URL" ,Realm.Configuration.defaultConfiguration.fileURL)
     }
     
     override func viewDidAppear(_ animated: Bool) {

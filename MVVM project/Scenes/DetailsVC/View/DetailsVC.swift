@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import CoreData
 
 class DetailsVC: UIViewController {
     
@@ -36,11 +37,27 @@ class DetailsVC: UIViewController {
     }
     //MARK: - Functions
     func configeView(){
+        viewModel.delegate = self
         title = "Details"
         movieImageView.kf.indicatorType = .activity
         movieImageView.kf.setImage(with: viewModel.movieImage)
         movieNameLbl.text = viewModel.movieName
         movieDescriptionLbl.text = viewModel.movieDescription
         movieImageView.round(20)
+    }
+    
+        //MARK: - IBActions
+    @IBAction func addToFavBtn(_ sender: Any) {
+        viewModel.addProductToCoreData()
+    }
+}
+
+extension DetailsVC : DetailsViewModelDelegate{
+    func cashingMovieIsDone(message: String) {
+        showALert(message: message)
+    }
+    
+    func cashingMovieIsFail(message: String) {
+        showALert(message: message)
     }
 }

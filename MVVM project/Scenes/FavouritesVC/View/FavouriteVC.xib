@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouriteVC" customModule="MVVM_project" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="oJL-CN-qbf" id="yeW-bc-DnL"/>
+                <outlet property="emptyFavLbl" destination="sG7-5D-7AQ" id="qOq-YB-lMR"/>
+                <outlet property="favouraitsTableView" destination="N25-uU-b7B" id="yQt-ev-AYa"/>
+                <outlet property="view" destination="BeW-ez-NJ8" id="bmu-la-eVP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BeW-ez-NJ8">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N25-uU-b7B">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-CN-qbf">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Favourits yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sG7-5D-7AQ">
+                    <rect key="frame" x="20" y="426.66666666666669" width="353" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="TAT-Iu-FfB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sG7-5D-7AQ" firstAttribute="centerY" secondItem="TAT-Iu-FfB" secondAttribute="centerY" id="1jz-TW-ixA"/>
+                <constraint firstItem="oJL-CN-qbf" firstAttribute="centerY" secondItem="BeW-ez-NJ8" secondAttribute="centerY" id="FCe-wJ-SPq"/>
+                <constraint firstItem="sG7-5D-7AQ" firstAttribute="centerX" secondItem="TAT-Iu-FfB" secondAttribute="centerX" id="Ihl-ML-o8I"/>
+                <constraint firstItem="TAT-Iu-FfB" firstAttribute="bottom" secondItem="N25-uU-b7B" secondAttribute="bottom" id="NAt-YW-gUR"/>
+                <constraint firstItem="TAT-Iu-FfB" firstAttribute="trailing" secondItem="N25-uU-b7B" secondAttribute="trailing" id="Nlt-cU-Kz2"/>
+                <constraint firstItem="sG7-5D-7AQ" firstAttribute="leading" secondItem="TAT-Iu-FfB" secondAttribute="leading" constant="20" id="NoA-sd-yDJ"/>
+                <constraint firstItem="TAT-Iu-FfB" firstAttribute="trailing" secondItem="sG7-5D-7AQ" secondAttribute="trailing" constant="20" id="UPy-uq-3kW"/>
+                <constraint firstItem="oJL-CN-qbf" firstAttribute="centerX" secondItem="BeW-ez-NJ8" secondAttribute="centerX" id="hPK-p0-Ytc"/>
+                <constraint firstItem="N25-uU-b7B" firstAttribute="top" secondItem="TAT-Iu-FfB" secondAttribute="top" id="jsW-xf-iGe"/>
+                <constraint firstItem="N25-uU-b7B" firstAttribute="leading" secondItem="TAT-Iu-FfB" secondAttribute="leading" id="rrE-Ch-MkH"/>
+            </constraints>
+            <point key="canvasLocation" x="238" y="-90"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

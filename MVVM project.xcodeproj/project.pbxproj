@@ -40,6 +40,13 @@
 		21CBA6362A6699BB00CC3EE6 /* MoviesCasheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA6352A6699BB00CC3EE6 /* MoviesCasheModel.swift */; };
 		21CBA6382A66B53700CC3EE6 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA6372A66B53700CC3EE6 /* RealmManager.swift */; };
 		21CBA68F2A7002F500CC3EE6 /* Extentions + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA68E2A7002F500CC3EE6 /* Extentions + UIViewController.swift */; };
+		21CBA6942A711D9000CC3EE6 /* BaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA6922A711D9000CC3EE6 /* BaseTabBarVC.swift */; };
+		21CBA6952A711D9000CC3EE6 /* BaseTabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CBA6932A711D9000CC3EE6 /* BaseTabBarVC.xib */; };
+		21CBA69D2A71202400CC3EE6 /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA69B2A71202400CC3EE6 /* FavouriteVC.swift */; };
+		21CBA69E2A71202400CC3EE6 /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21CBA69C2A71202400CC3EE6 /* FavouriteVC.xib */; };
+		21CBA7352A728B9700CC3EE6 /* MVVM_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA7332A728B9700CC3EE6 /* MVVM_project.xcdatamodeld */; };
+		21CBA73F2A728F8200CC3EE6 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA73E2A728F8200CC3EE6 /* FilmModel.swift */; };
+		21CBA7412A729FF200CC3EE6 /* FavoraitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA7402A729FF200CC3EE6 /* FavoraitsViewModel.swift */; };
 		21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */; };
 		4F902836B546CF8D5E2B97CF /* Pods_MVVM_project_MVVM_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE442C05913CCA166B9FB48 /* Pods_MVVM_project_MVVM_projectUITests.framework */; };
 		E69050B8858A4B6C2C128F96 /* Pods_MVVM_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */; };
@@ -95,6 +102,13 @@
 		21CBA6352A6699BB00CC3EE6 /* MoviesCasheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCasheModel.swift; sourceTree = "<group>"; };
 		21CBA6372A66B53700CC3EE6 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		21CBA68E2A7002F500CC3EE6 /* Extentions + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions + UIViewController.swift"; sourceTree = "<group>"; };
+		21CBA6922A711D9000CC3EE6 /* BaseTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarVC.swift; sourceTree = "<group>"; };
+		21CBA6932A711D9000CC3EE6 /* BaseTabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarVC.xib; sourceTree = "<group>"; };
+		21CBA69B2A71202400CC3EE6 /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
+		21CBA69C2A71202400CC3EE6 /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
+		21CBA7342A728B9700CC3EE6 /* MVVM_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_project.xcdatamodel; sourceTree = "<group>"; };
+		21CBA73E2A728F8200CC3EE6 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		21CBA7402A729FF200CC3EE6 /* FavoraitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoraitsViewModel.swift; sourceTree = "<group>"; };
 		21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		256076CC7156CD513EEEBEF4 /* Pods-MVVM project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM project.debug.xcconfig"; path = "Target Support Files/Pods-MVVM project/Pods-MVVM project.debug.xcconfig"; sourceTree = "<group>"; };
 		270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,9 +178,9 @@
 		21B768602A01230A0051F50A /* MVVM project */ = {
 			isa = PBXGroup;
 			children = (
-				21CBA6322A668ED300CC3EE6 /* Helper */,
 				21B768992A0126DE0051F50A /* Core */,
 				21B7689C2A0127860051F50A /* Networking */,
+				21CBA6322A668ED300CC3EE6 /* Helper */,
 				21B768982A0126C90051F50A /* Scenes */,
 				21B768A62A028A0D0051F50A /* Classes */,
 				21B768B42A0529970051F50A /* Extensions */,
@@ -174,6 +188,7 @@
 				21B768952A01267E0051F50A /* View */,
 				21B7686F2A01230C0051F50A /* Info.plist */,
 				21789C382A0CCE8F00CE49A9 /* GoogleService-Info.plist */,
+				21CBA7332A728B9700CC3EE6 /* MVVM_project.xcdatamodeld */,
 			);
 			path = "MVVM project";
 			sourceTree = "<group>";
@@ -206,6 +221,8 @@
 		21B768982A0126C90051F50A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				21CBA6962A711F7700CC3EE6 /* FavouritesVC */,
+				21CBA6902A711D5C00CC3EE6 /* BaseTabBar */,
 				21B7689B2A0127040051F50A /* MainVC */,
 				21B768B72A06463B0051F50A /* DetailsVC */,
 			);
@@ -380,6 +397,58 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		21CBA6902A711D5C00CC3EE6 /* BaseTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA6912A711D6C00CC3EE6 /* View */,
+			);
+			path = BaseTabBar;
+			sourceTree = "<group>";
+		};
+		21CBA6912A711D6C00CC3EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA6922A711D9000CC3EE6 /* BaseTabBarVC.swift */,
+				21CBA6932A711D9000CC3EE6 /* BaseTabBarVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21CBA6962A711F7700CC3EE6 /* FavouritesVC */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA6992A711FEF00CC3EE6 /* ViewModel */,
+				21CBA6982A711FE900CC3EE6 /* View */,
+				21CBA6972A711FE000CC3EE6 /* Model */,
+			);
+			path = FavouritesVC;
+			sourceTree = "<group>";
+		};
+		21CBA6972A711FE000CC3EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA73E2A728F8200CC3EE6 /* FilmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21CBA6982A711FE900CC3EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA69B2A71202400CC3EE6 /* FavouriteVC.swift */,
+				21CBA69C2A71202400CC3EE6 /* FavouriteVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21CBA6992A711FEF00CC3EE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21CBA7402A729FF200CC3EE6 /* FavoraitsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AF1538157F02840B24A53F1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +597,8 @@
 				21B7686B2A01230C0051F50A /* Assets.xcassets in Resources */,
 				21B768BF2A0646AD0051F50A /* DetailsVC.xib in Resources */,
 				21789C392A0CCE8F00CE49A9 /* GoogleService-Info.plist in Resources */,
+				21CBA69E2A71202400CC3EE6 /* FavouriteVC.xib in Resources */,
+				21CBA6952A711D9000CC3EE6 /* BaseTabBarVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,8 +751,10 @@
 				21B768BE2A0646AD0051F50A /* DetailsVC.swift in Sources */,
 				21CBA68F2A7002F500CC3EE6 /* Extentions + UIViewController.swift in Sources */,
 				21B768B32A05275A0051F50A /* MainCellViewModel.swift in Sources */,
+				21CBA7352A728B9700CC3EE6 /* MVVM_project.xcdatamodeld in Sources */,
 				21B768AF2A0527200051F50A /* MainTableViewCell.swift in Sources */,
 				21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */,
+				21CBA7412A729FF200CC3EE6 /* FavoraitsViewModel.swift in Sources */,
 				21B768A02A0143AD0051F50A /* Constants.swift in Sources */,
 				21CBA6362A6699BB00CC3EE6 /* MoviesCasheModel.swift in Sources */,
 				21C1F9122A10E81800BB63F8 /* TargetType.swift in Sources */,
@@ -689,9 +762,12 @@
 				21B768A52A014EBB0051F50A /* MainMoviesNetworking.swift in Sources */,
 				21CBA6382A66B53700CC3EE6 /* RealmManager.swift in Sources */,
 				21C1F9152A10EC3400BB63F8 /* BaseAPI.swift in Sources */,
+				21CBA6942A711D9000CC3EE6 /* BaseTabBarVC.swift in Sources */,
 				21B768A22A01453E0051F50A /* MoviesModel.swift in Sources */,
 				21B768932A0124220051F50A /* MainVC.swift in Sources */,
 				21B768642A01230A0051F50A /* SceneDelegate.swift in Sources */,
+				21CBA73F2A728F8200CC3EE6 /* FilmModel.swift in Sources */,
+				21CBA69D2A71202400CC3EE6 /* FavouriteVC.swift in Sources */,
 				21CBA6342A668EE300CC3EE6 /* InternetConnection .swift in Sources */,
 				21B768B62A0529A90051F50A /* Extensions + UIView.swift in Sources */,
 				21B7689E2A0136730051F50A /* MainViewModel.swift in Sources */,
@@ -872,6 +948,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -903,6 +980,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1073,6 +1151,19 @@
 			productName = FirebasePerformance;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		21CBA7332A728B9700CC3EE6 /* MVVM_project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21CBA7342A728B9700CC3EE6 /* MVVM_project.xcdatamodel */,
+			);
+			currentVersion = 21CBA7342A728B9700CC3EE6 /* MVVM_project.xcdatamodel */;
+			path = MVVM_project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 21B768562A01230A0051F50A /* Project object */;
 }

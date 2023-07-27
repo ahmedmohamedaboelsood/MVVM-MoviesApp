@@ -74,16 +74,16 @@ class MainViewModel {
             movieObject.id = movie.id
             movieObject.adult = movie.adult
             movieObject.backdrop_path = movie.backdrop_path
-            movieObject.title = movie.title ?? ""
+            movieObject.title = movie.title ?? movie.name ??  movie.original_name ?? movie.original_title ?? ""
             movieObject.original_title = movie.original_title ?? ""
             movieObject.overview = movie.overview
             movieObject.poster_path = movie.poster_path
             movieObject.popularity = movie.popularity
-            movieObject.release_date = movie.release_date ?? ""
+            movieObject.release_date = movie.release_date ?? movie.first_air_date ?? ""
             movieObject.video = movie.video ?? false
             movieObject.vote_average = movie.vote_average
             movieObject.vote_count = movie.vote_count
-            movieObject.name = movie.name ?? ""
+            movieObject.name = movie.name ?? movie.title ?? ""
             movieObject.original_name = movie.original_name ?? ""
             movieObject.first_air_date = movie.first_air_date ?? ""
             return movieObject
