@@ -21,11 +21,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HB8-jC-1aT">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="829"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IcH-s2-IMY">
-                    <rect key="frame" x="178" y="420" width="37" height="37"/>
+                    <rect key="frame" x="178" y="455" width="37" height="37"/>
                     <color key="color" systemColor="systemGrayColor"/>
                 </activityIndicatorView>
             </subviews>
@@ -34,7 +34,7 @@
             <constraints>
                 <constraint firstItem="IcH-s2-IMY" firstAttribute="centerX" secondItem="HB8-jC-1aT" secondAttribute="centerX" id="3kD-aq-7cg"/>
                 <constraint firstItem="HB8-jC-1aT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4jg-Zl-a79"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HB8-jC-1aT" secondAttribute="bottom" id="8QG-iI-Xou"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HB8-jC-1aT" secondAttribute="bottom" constant="-70" id="8QG-iI-Xou"/>
                 <constraint firstItem="HB8-jC-1aT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AjC-Xq-Tug"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HB8-jC-1aT" secondAttribute="trailing" id="JH1-cy-rp6"/>
                 <constraint firstItem="IcH-s2-IMY" firstAttribute="centerY" secondItem="HB8-jC-1aT" secondAttribute="centerY" id="NB4-lr-5ss"/>

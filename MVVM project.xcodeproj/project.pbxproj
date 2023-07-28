@@ -47,6 +47,7 @@
 		21CBA7352A728B9700CC3EE6 /* MVVM_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA7332A728B9700CC3EE6 /* MVVM_project.xcdatamodeld */; };
 		21CBA73F2A728F8200CC3EE6 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA73E2A728F8200CC3EE6 /* FilmModel.swift */; };
 		21CBA7412A729FF200CC3EE6 /* FavoraitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA7402A729FF200CC3EE6 /* FavoraitsViewModel.swift */; };
+		21CBA7442A743FFD00CC3EE6 /* SHCircleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CBA7422A743FFD00CC3EE6 /* SHCircleBar.swift */; };
 		21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */; };
 		4F902836B546CF8D5E2B97CF /* Pods_MVVM_project_MVVM_projectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE442C05913CCA166B9FB48 /* Pods_MVVM_project_MVVM_projectUITests.framework */; };
 		E69050B8858A4B6C2C128F96 /* Pods_MVVM_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */; };
@@ -109,6 +110,7 @@
 		21CBA7342A728B9700CC3EE6 /* MVVM_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_project.xcdatamodel; sourceTree = "<group>"; };
 		21CBA73E2A728F8200CC3EE6 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 		21CBA7402A729FF200CC3EE6 /* FavoraitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoraitsViewModel.swift; sourceTree = "<group>"; };
+		21CBA7422A743FFD00CC3EE6 /* SHCircleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHCircleBar.swift; sourceTree = "<group>"; };
 		21DCBEE12A06485900FA8FF5 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		256076CC7156CD513EEEBEF4 /* Pods-MVVM project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM project.debug.xcconfig"; path = "Target Support Files/Pods-MVVM project/Pods-MVVM project.debug.xcconfig"; sourceTree = "<group>"; };
 		270CE9F06CCE890E98A2BD55 /* Pods_MVVM_projectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_projectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -393,6 +395,7 @@
 			children = (
 				21CBA6332A668EE300CC3EE6 /* InternetConnection .swift */,
 				21CBA6372A66B53700CC3EE6 /* RealmManager.swift */,
+				21CBA7422A743FFD00CC3EE6 /* SHCircleBar.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -752,6 +755,7 @@
 				21CBA68F2A7002F500CC3EE6 /* Extentions + UIViewController.swift in Sources */,
 				21B768B32A05275A0051F50A /* MainCellViewModel.swift in Sources */,
 				21CBA7352A728B9700CC3EE6 /* MVVM_project.xcdatamodeld in Sources */,
+				21CBA7442A743FFD00CC3EE6 /* SHCircleBar.swift in Sources */,
 				21B768AF2A0527200051F50A /* MainTableViewCell.swift in Sources */,
 				21DCBEE22A06485900FA8FF5 /* DetailsViewModel.swift in Sources */,
 				21CBA7412A729FF200CC3EE6 /* FavoraitsViewModel.swift in Sources */,
