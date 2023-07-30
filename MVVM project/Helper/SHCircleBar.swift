@@ -77,9 +77,7 @@ extension SHCircleBar {
     
     private func drawPath(for index: CGFloat) -> UIBezierPath {
         let bezPath = UIBezierPath()
-        
         let tabHeight: CGFloat = tabWidth / 1.5
-        
         let leftPoint = CGPoint(x: (index * tabWidth) + 20 , y: 0)
         let leftPointCurveUp = CGPoint(
             x: ((tabWidth * index) + tabWidth / 2.8),
@@ -105,7 +103,5 @@ extension SHCircleBar {
         bezPath.append(UIBezierPath(rect: self.bounds))
         return bezPath
     }
-    
-    
 }
 
