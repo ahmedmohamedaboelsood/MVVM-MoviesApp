@@ -19,6 +19,7 @@ class MainViewModel {
     var isLoading : Observable<Bool> = Observable(false)
     var cashedCellDataSourse : Observable<[MainCellViewModel]> = Observable(nil)
     var cellDataSourse : Observable<[MainCellViewModel]> = Observable(nil)
+    
     var dataSourse : MoviesModel?
     var numberOfRows : Int?
     var MoviesApi = MainApi()
@@ -43,7 +44,7 @@ class MainViewModel {
                 self.dataSourse = data
                 self.numberOfRows = self.dataSourse?.results.count
                 self.mapData()
-            case .failure(_): 
+            case .failure(let error):
                 self.cashedCellDataSourse.value = self.fetchCachedData().compactMap({ MainCellViewModel($0)})
                 self.numberOfRows = self.fetchCachedData().count
                 self.delegate?.getcashedDataDelegate(message: "Check InternetConnection")

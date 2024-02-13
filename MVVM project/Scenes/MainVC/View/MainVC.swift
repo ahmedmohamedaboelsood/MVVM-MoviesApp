@@ -22,6 +22,7 @@ class MainVC: UIViewController {
         viewModel.delegate = self
         configView()
         bindLoadingIndicator()
+        bindRemoteData()
        // print("URL" ,Realm.Configuration.defaultConfiguration.fileURL)
     }
     
